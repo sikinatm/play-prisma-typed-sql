@@ -1,0 +1,1 @@
+SELECT id, name, email, "createdAt" FROM "User" WHERE name = $1

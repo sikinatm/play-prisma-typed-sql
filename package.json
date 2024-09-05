@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "migrate": "DATABASE_URL='postgresql://sandbox:postgres@localhost:5432/sandbox?schema=public' npx prisma migrate dev --name init",
+    "generate": "DATABASE_URL='postgresql://sandbox:postgres@localhost:5432/sandbox?schema=public' npx prisma generate --sql",
+    "exec": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
